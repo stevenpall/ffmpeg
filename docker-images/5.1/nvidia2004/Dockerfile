@@ -550,6 +550,7 @@ RUN  \
         --disable-doc \
         --disable-ffplay \
         --enable-cuda \
+        --enable-cuda-sdk \
         --enable-cuvid \
         --enable-fontconfig \
         --enable-gpl \
