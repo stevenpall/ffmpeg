@@ -551,6 +551,7 @@ RUN  \
         --disable-ffplay \
         --enable-avresample \
         --enable-cuda \
+        --enable-cuda-sdk \
         --enable-cuvid \
         --enable-fontconfig \
         --enable-gpl \
