@@ -33,8 +33,7 @@ FROM  devel-base as build
 
 ENV        NVIDIA_HEADERS_VERSION=11.1.5.0
 
-ENV         FFMPEG_VERSION=4.3.4 \
-    AOM_VERSION=v1.0.0 \
+ENV AOM_VERSION=v1.0.0 \
     CHROMAPRINT_VERSION=1.5.0 \
     FDKAAC_VERSION=0.1.5 \
     FONTCONFIG_VERSION=2.12.4 \
@@ -529,6 +528,8 @@ RUN \
         make && \
         make install && \
         rm -rf ${DIR}
+
+ENV FFMPEG_VERSION=4.3.4
 
 ## Download ffmpeg https://ffmpeg.org/
 RUN  \
